@@ -12,7 +12,7 @@ module Cloudfront
 	      Cloudfront::Private::Base.configure(&block)
 	    end
 	    
-	    def get_url(_request,_resource,expire)
+	    def get_url(_request,_resource,expire = 1.hour.from_now.to_i)
 	    	Cloudfront::Private::Base.get_url(_request, _resource,expire)
 	    end
 	  end
