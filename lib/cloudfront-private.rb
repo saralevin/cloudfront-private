@@ -13,7 +13,7 @@ module Cloudfront
 	    end
 	    
 	    def get_url(_request,_resource,expire)
-	    	Cloudfront::Private::Base.get_url(_request, _resource)
+	    	Cloudfront::Private::Base.get_url(_request, _resource,expire)
 	    end
 	  end
 	  
